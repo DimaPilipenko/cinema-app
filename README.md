@@ -13,24 +13,29 @@
 
 <a name="About-The-Project"></a>
 ## About The Project
-This project is simple implementation of real cinema web application with authentication
+This project is simple implementation of real cinema web application with authentication and authorization
 
 ![line](src/main/resources/images/rainbow.png)
 
 <a name="Features⚙"></a>
 ## Features
-When you open application website you can login or register
-### If you login as user with role USER, you can:
-- See all information of movies, cinema halls and movies sessions
-- Add a ticket to the shopping cart 
-- Create order
-- See order history
-- Logout
-### If you login as user with role ADMIN, you can:
-- See all information of movies, cinema halls and movies sessions
-- Create, modify and delete cinema-hall, movies, and movie sessions from the database
-- Get info about user by email
-- Logout
+This project have multiple endpoints with user and admin access.
+### You can see them here:
+- POST: /register - all
+- GET: /cinema-halls - user/admin
+- POST: /cinema-halls - admin
+- GET: /movies - user/admin
+- POST: /movies - admin
+- GET: /movie-sessions/available - user/admin
+- GET: /movie-sessions/{id} - user/admin
+- POST: /movie-sessions - admin
+- PUT: /movie-sessions/{id} - admin
+- DELETE: /movie-sessions/{id} - admin
+- GET: /orders - user
+- POST: /orders/complete - user
+- PUT: /shopping-carts/movie-sessions - user
+- GET: /shopping-carts/by-user - user
+- GET: /users/by-email - admin
 
 ![line](src/main/resources/images/rainbow.png)
 
