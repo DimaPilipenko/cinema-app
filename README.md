@@ -27,7 +27,6 @@ This project have multiple endpoints with user and admin access.
 - GET: /movies - user/admin
 - POST: /movies - admin
 - GET: /movie-sessions/available - user/admin
-- GET: /movie-sessions/{id} - user/admin
 - POST: /movie-sessions - admin
 - PUT: /movie-sessions/{id} - admin
 - DELETE: /movie-sessions/{id} - admin
